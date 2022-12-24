@@ -64,3 +64,32 @@ while i <= 10 do
     puts i
     i+=1
 end
+
+# 練習問題
+puts "計算を始めます。"
+puts "２つの値を入力してください。"
+input_num1 = gets.to_i
+input_num2 = gets.to_i
+puts "計算結果を出力します！"
+puts "#{input_num1}*#{input_num2}=#{input_num1*input_num2}"
+puts "計算を終了します。"
+
+puts "計算を始めます。"
+puts "何回計算を繰り返しますか？"
+
+count = gets.to_i
+
+for cal in 1..count
+    puts "数字を２つ入力してください。"
+    a = gets.to_i
+    b = gets.to_i
+    puts "計算結果を出力します。"
+    puts "#{a}+#{b}=#{a+b}"
+    puts "#{a}-#{b}=#{a-b}"
+    puts "#{a}x#{b}=#{a*b}"
+    puts "#{a}÷#{b}=#{a/b} 余り#{a%b}"
+    cal=1
+    cal+=1
+end
+
+puts "計算を終了します。"
