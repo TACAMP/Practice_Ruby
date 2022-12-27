@@ -57,3 +57,22 @@ end
 puts calc(0)
 
 # 「FizzBuzzプログラム」 = 元々はシンプルなパーティーゲーム。プログラムコードとして画面上に出力できるかどうかでプログラマーの技術力が分かるため、コーティング面接の材料に使われる。
+
+puts "数字を入力してください"
+
+a = gets.to_i
+
+def fizzbuzz(a)
+    if (a%3 == 0) && (a%5 ==0)
+        "fizzbuzz"
+    elsif (a%3 == 0)
+        "fizz"
+    elsif (a%5 == 0)
+        "buzz"
+    else 
+        a.to_s
+    end
+end
+
+puts "結果は..."
+puts fizzbuzz(a)
