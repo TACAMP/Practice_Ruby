@@ -76,3 +76,4 @@ end
 
 puts "結果は..."
 puts fizzbuzz(a)
+
